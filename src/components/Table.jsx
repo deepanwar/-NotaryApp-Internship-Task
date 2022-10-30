@@ -8,6 +8,7 @@ const Table = () => {
   useEffect(() => {
    getCompaniesData()
     .then(setCompaniesList)
+    .then(()=>console.log(companiesList))
     .catch((err) => console.log(err));
   }, []);
 
